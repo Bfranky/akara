@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lato:wght@300;400;700&family=Abril+Fatface&display=swap');
+
+:root {
+  --cream: #F5EDD6;
+  --warm-white: #FBF7EE;
+  --charcoal: #1A1A18;
+  --brown: #3D2B1F;
+  --spice: #C2440E;
+  --gold: #D4A017;
+  --green: #2E5E35;
+  --light-green: #4A7C59;
+  --muted: #7A6A5A;
+  --border: #D9CEBA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--warm-white);
+  color: var(--charcoal);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--charcoal);
+}

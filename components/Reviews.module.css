@@ -1,0 +1,151 @@
+.reviews {
+  background: var(--cream);
+  padding: 8rem 4rem;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--spice);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.heading {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  color: var(--charcoal);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.overall {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.score {
+  font-family: 'Abril Fatface', serif;
+  font-size: 4rem;
+  color: var(--charcoal);
+  line-height: 1;
+}
+
+.count {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--spice), var(--brown));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.reviewer {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+.reviewerBadge {
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.starRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.text {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  border: 2px solid var(--charcoal);
+  color: var(--charcoal);
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.ctaBtn:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .reviews { padding: 5rem 1.5rem; }
+}

@@ -1,0 +1,66 @@
+.footer {
+  background: var(--brown);
+  padding: 3rem 4rem 2rem;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.brand p, .middle p {
+  font-size: 0.78rem;
+  color: rgba(245,237,214,0.5);
+  line-height: 1.6;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-end;
+}
+
+.right a {
+  font-size: 0.8rem;
+  color: rgba(245,237,214,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.right a:hover { color: var(--gold); }
+
+.bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom p {
+  font-size: 0.7rem;
+  color: rgba(245,237,214,0.3);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .footer { padding: 2.5rem 1.5rem 1.5rem; }
+  .inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .right { align-items: flex-start; }
+  .bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+}

@@ -1,0 +1,145 @@
+.menu {
+  background: var(--charcoal);
+  padding: 8rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.heading {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  color: var(--cream);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  color: rgba(245,237,214,0.45);
+  font-size: 1rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212,160,23,0.3);
+}
+
+.cardImg {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--brown);
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  filter: brightness(0.88) saturate(1.1);
+}
+
+.card:hover .cardImg img {
+  transform: scale(1.06);
+}
+
+.badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 0.62rem;
+  background: var(--spice);
+  color: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.cardBody {
+  padding: 1.4rem 1.5rem;
+}
+
+.cardName {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--cream);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  font-size: 0.82rem;
+  color: rgba(245,237,214,0.45);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.cardPrice {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.note {
+  text-align: center;
+  color: rgba(245,237,214,0.25);
+  font-size: 0.72rem;
+  margin-top: 2.5rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .menu { padding: 5rem 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}
