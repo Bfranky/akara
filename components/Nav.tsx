@@ -18,7 +18,7 @@ export default function Nav() {
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <a href="#hero" className={styles.logo}>
         <span className={styles.logoMain}>Akara Ogbe</span>
-        <span className={styles.logoSub}>Enugu's Morning Ritual</span>
+        <span className={styles.logoSub}>Enugu&apos;s Morning Ritual</span>
       </a>
       <ul className={`${styles.links} ${open ? styles.open : ''}`}>
         {links.map(l => (

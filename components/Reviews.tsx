@@ -66,7 +66,7 @@ export default function Reviews() {
                 <Stars n={r.rating} />
                 <span className={styles.time}>{r.time}</span>
               </div>
-              <p className={styles.text}>"{r.text}"</p>
+              <p className={styles.text}>&quot;{r.text}&quot;</p>
             </div>
           ))}
         </div>

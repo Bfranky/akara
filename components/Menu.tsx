@@ -72,7 +72,7 @@ export default function Menu() {
           ))}
         </div>
         <p className={styles.note}>
-          * Prices are estimates. Menu subject to change. Call us for today's availability.
+          * Prices are estimates. Menu subject to change. Call us for today&apos;s availability.
         </p>
       </div>
     </section>

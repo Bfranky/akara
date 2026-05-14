@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <span className={styles.logo}>Akara Ogbe</span>
-          <p>Enugu's Morning Ritual</p>
+          <p>Enugu&apos;s Morning Ritual</p>
         </div>
         <div className={styles.middle}>
           <p>Ibusa Ave, Independence Layout, Enugu</p>
